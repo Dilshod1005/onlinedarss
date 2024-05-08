@@ -4,10 +4,12 @@ namespace frontend\controllers;
 
 use common\models\Category;
 use common\models\LoginForm;
+use common\models\User;
 use frontend\models\ContactForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
@@ -157,7 +159,7 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
-        $model = new Category();
+        $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
             return $this->goHome();
