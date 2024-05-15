@@ -1,6 +1,8 @@
 <?php
 
 /** @var yii\web\View $this */
+/** @var yii\web\View $model */
+/** @var yii\web\View $mod */
 use yii\helpers\Url;
 
 $this->title = 'My Yii Application';
@@ -16,7 +18,7 @@ $this->title = 'My Yii Application';
             <div class="col-lg-12">
                 <div class="main-banner-wrapper">
                     <div class="banner-style-one owl-theme owl-carousel">
-                        <div class="slide slide-one" style="background-image: url(images/home/1.jpg); height: 95vh;">
+                        <div class="slide slide-one" style="background-image: url(<?=Url::base()?>/images/home/1.jpg); height: 95vh;">
                             <div class="container">
                                 <div class="row home-content">
                                     <div class="col-lg-12 text-center p0">
@@ -27,7 +29,7 @@ $this->title = 'My Yii Application';
                                 </div>
                             </div>
                         </div>
-                        <div class="slide slide-one" style="background-image: url(images/home/2.jpg);height: 95vh;">
+                        <div class="slide slide-one" style="background-image: url(<?=Url::base()?>/images/home/2.jpg);height: 95vh;">
                             <div class="container">
                                 <div class="row home-content">
                                     <div class="col-lg-12 text-center p0">
@@ -38,7 +40,7 @@ $this->title = 'My Yii Application';
                                 </div>
                             </div>
                         </div>
-                        <div class="slide slide-one" style="background-image: url(images/home/3.jpg);height: 95vh;">
+                        <div class="slide slide-one" style="background-image: url(<?=Url::base()?>/images/home/3.jpg);height: 95vh;">
                             <div class="container">
                                 <div class="row home-content">
                                     <div class="col-lg-12 text-center p0">
@@ -64,25 +66,25 @@ $this->title = 'My Yii Application';
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="home_icon_box">
-                            <div class="icon"><img src="images/home/hicon1.png" alt="hicon1.png"></div>
+                            <div class="icon"><img src="<?=Url::base()?>/images/home/hicon1.png" alt="hicon1.png"></div>
                             <p>Learn From The Experts</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="home_icon_box">
-                            <div class="icon mt15"><img src="images/home/hicon2.png" alt="hicon2.png"></div>
+                            <div class="icon mt15"><img src="<?=Url::base()?>/images/home/hicon2.png" alt="hicon2.png"></div>
                             <p>Book Library & Store</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="home_icon_box">
-                            <div class="icon"><img src="images/home/hicon3.png" alt="hicon3.png"></div>
+                            <div class="icon"><img src="<?=Url::base()?>/images/home/hicon3.png" alt="hicon3.png"></div>
                             <p>Worldwide Recognize</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="home_icon_box">
-                            <div class="icon"><img src="images/home/hicon4.png" alt="hicon4.png"></div>
+                            <div class="icon"><img src="<?=Url::base()?>/images/home/hicon4.png" alt="hicon4.png"></div>
                             <p>Best Industry Leaders</p>
                         </div>
                     </div>
@@ -116,7 +118,7 @@ $this->title = 'My Yii Application';
         </div>
         <div class="row">
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/1.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/1.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Design</h5>
@@ -126,7 +128,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/2.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/2.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Business</h5>
@@ -136,7 +138,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/3.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/3.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Software Development</h5>
@@ -146,7 +148,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/4.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/4.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Web Development</h5>
@@ -156,7 +158,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/5.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/5.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Photography</h5>
@@ -166,7 +168,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/6.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/6.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Audio + Music</h5>
@@ -176,7 +178,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/7.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/7.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>Marketing</h5>
@@ -186,7 +188,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="img_hvr_box" style="background-image: url(images/courses/8.jpg);">
+                <div class="img_hvr_box" style="background-image: url(<?=Url::base()?>/images/courses/8.jpg);">
                     <div class="overlay">
                         <div class="details">
                             <h5>3D + Animation</h5>
@@ -235,20 +237,56 @@ $this->title = 'My Yii Application';
                 <div id="options" class="alpha-pag full">
                     <div class="option-isotop">
                         <ul id="filter" class="option-set" data-option-key="filter">
-                            <li class="list-inline-item"><a href="#all" data-option-value="*" class="selected">Developer</a></li>
-                            <li class="list-inline-item"><a href="#business" data-option-value=".business">Business</a></li>
-                            <li class="list-inline-item"><a href="#design" data-option-value=".design">Design</a></li>
-                            <li class="list-inline-item"><a href="#web" data-option-value=".web">Web</a></li>
-                            <li class="list-inline-item"><a href="#marketing" data-option-value=".marketing">Marketing</a></li>
+                            <?php foreach ($model as $row) :?>
+                                <li class="list-inline-item"><a href="#business" data-option-value=".business"><?=$row->name;?></a></li>
+                            <?php endforeach;?>
+
                         </ul>
                     </div>
                 </div><!-- FILTER BUTTONS -->
                 <div class="emply-text-sec">
                     <div class="row" id="masonry_abc">
+                        <?php foreach ($mod as $mode) :?>
+                            <div class="col-md-6 col-lg-4 col-xl-3 business design">
+                                <div class="top_courses">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="<?=Url::base()?>/images/courses/t1.jpg" alt="t1.jpg">
+                                        <div class="overlay">
+                                            <div class="tag">Best Seller</div>
+                                            <div class="icon"><span class="flaticon-like"></span></div>
+                                            <a class="tc_preview_course" href="<?=Url::to(['courses/detail','name'=>$mode->name])?>">Preview Course</a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="tc_content">
+                                            <p><?=$mode->teacher?></p>
+                                            <h5><?=$mode->name?></h5>
+                                            <ul class="tc_review">
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tc_footer">
+                                            <ul class="tc_meta float-left">
+                                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                                <li class="list-inline-item"><a href="#">25</a></li>
+                                            </ul>
+                                            <div class="tc_price float-right"><?=$mode->sum?> so'm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach;?>
                         <div class="col-md-6 col-lg-4 col-xl-3 business design">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t1.jpg" alt="t1.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t1.jpg" alt="t1.jpg">
                                     <div class="overlay">
                                         <div class="tag">Best Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -280,10 +318,11 @@ $this->title = 'My Yii Application';
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-lg-4 col-xl-3 business marketing">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t2.jpg" alt="t2.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t2.jpg" alt="t2.jpg">
                                     <div class="overlay">
                                         <div class="tag">Top Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -318,7 +357,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 web design">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t3.jpg" alt="t3.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t3.jpg" alt="t3.jpg">
                                     <div class="overlay">
                                         <div class="tag">Top Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -353,7 +392,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 business Web">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t4.jpg" alt="t4.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t4.jpg" alt="t4.jpg">
                                     <div class="overlay">
                                         <div class="tag">Best Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -388,7 +427,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 marketing">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t5.jpg" alt="t5.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t5.jpg" alt="t5.jpg">
                                     <div class="overlay">
                                         <div class="tag">Best Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -423,7 +462,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 business marketing">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t6.jpg" alt="t6.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t6.jpg" alt="t6.jpg">
                                     <div class="overlay">
                                         <div class="tag">Top Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -458,7 +497,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 design Web">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t7.jpg" alt="t7.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t7.jpg" alt="t7.jpg">
                                     <div class="overlay">
                                         <div class="tag">Top Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -493,7 +532,7 @@ $this->title = 'My Yii Application';
                         <div class="col-md-6 col-lg-4 col-xl-3 business">
                             <div class="top_courses">
                                 <div class="thumb">
-                                    <img class="img-whp" src="images/courses/t8.jpg" alt="t8.jpg">
+                                    <img class="img-whp" src="<?=Url::base()?>/images/courses/t8.jpg" alt="t8.jpg">
                                     <div class="overlay">
                                         <div class="tag">Best Seller</div>
                                         <div class="icon"><span class="flaticon-like"></span></div>
@@ -548,16 +587,16 @@ $this->title = 'My Yii Application';
                 <div class="testimonialsec">
                     <ul class="tes-nav">
                         <li>
-                            <img class="img-fluid" src="images/testimonial/1.jpg" alt="1.jpg"/>
+                            <img class="img-fluid" src="<?=Url::base()?>/images/testimonial/1.jpg" alt="1.jpg"/>
                         </li>
                         <li>
-                            <img class="img-fluid" src="images/testimonial/2.jpg" alt="2.jpg"/>
+                            <img class="img-fluid" src="<?=Url::base()?>/images/testimonial/2.jpg" alt="2.jpg"/>
                         </li>
                         <li>
-                            <img class="img-fluid" src="images/testimonial/3.jpg" alt="3.jpg"/>
+                            <img class="img-fluid" src="<?=Url::base()?>/images/testimonial/3.jpg" alt="3.jpg"/>
                         </li>
                         <li>
-                            <img class="img-fluid" src="images/testimonial/4.jpg" alt="4.jpg"/>
+                            <img class="img-fluid" src="<?=Url::base()?>/images/testimonial/4.jpg" alt="4.jpg"/>
                         </li>
                     </ul>
                     <ul class="tes-for">
@@ -622,7 +661,7 @@ $this->title = 'My Yii Application';
                         <div class="blog_post one">
                             <div class="thumb">
                                 <div class="post_title">Events</div>
-                                <img class="img-fluid w100" src="images/blog/1.jpg" alt="1.jpg">
+                                <img class="img-fluid w100" src="<?=Url::base()?>/images/blog/1.jpg" alt="1.jpg">
                                 <a class="post_date" href="#"><span>28 <br> March</span></a>
                             </div>
                             <div class="details">
@@ -640,7 +679,7 @@ $this->title = 'My Yii Application';
                         <div class="blog_post one">
                             <div class="thumb">
                                 <div class="post_title">Events</div>
-                                <img class="img-fluid w100" src="images/blog/1a.jpg" alt="1a.jpg">
+                                <img class="img-fluid w100" src="<?=Url::base()?>/images/blog/1a.jpg" alt="1a.jpg">
                                 <a class="post_date" href="#"><span>28 <br> March</span></a>
                             </div>
                             <div class="details">
@@ -658,7 +697,7 @@ $this->title = 'My Yii Application';
                         <div class="blog_post one">
                             <div class="thumb">
                                 <div class="post_title">Events</div>
-                                <img class="img-fluid w100" src="images/blog/1b.jpg" alt="1b.jpg">
+                                <img class="img-fluid w100" src="<?=Url::base()?>/images/blog/1b.jpg" alt="1b.jpg">
                                 <a class="post_date" href="#"><span>28 <br> March</span></a>
                             </div>
                             <div class="details">
@@ -677,7 +716,7 @@ $this->title = 'My Yii Application';
             <div class="col-md-6 col-lg-3 col-xl-3">
                 <div class="blog_post">
                     <div class="thumb">
-                        <img class="img-fluid w100" src="images/blog/2.jpg" alt="2.jpg">
+                        <img class="img-fluid w100" src="<?=Url::base()?>/images/blog/2.jpg" alt="2.jpg">
                         <a class="post_date" href="#">July 21, 2019</a>
                     </div>
                     <div class="details">
@@ -689,7 +728,7 @@ $this->title = 'My Yii Application';
             <div class="col-md-6 col-lg-3 col-xl-3">
                 <div class="blog_post">
                     <div class="thumb">
-                        <img class="img-fluid w100" src="images/blog/3.jpg" alt="3.jpg">
+                        <img class="img-fluid w100" src="<?=Url::base()?>/images/blog/3.jpg" alt="3.jpg">
                         <a class="post_date" href="#">July 21, 2019</a>
                     </div>
                     <div class="details">
@@ -735,7 +774,7 @@ $this->title = 'My Yii Application';
             </div>
             <div class="col-md-5 col-lg-5">
                 <div class="phone_img">
-                    <img class="img-fluid" src="images/resource/phone_home.png" alt="phone_home.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/resource/phone_home.png" alt="phone_home.png">
                 </div>
             </div>
         </div>
@@ -756,27 +795,27 @@ $this->title = 'My Yii Application';
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg">
                 <div class="our_partner">
-                    <img class="img-fluid" src="images/partners/1.png" alt="1.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/partners/1.png" alt="1.png">
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg">
                 <div class="our_partner">
-                    <img class="img-fluid" src="images/partners/2.png" alt="2.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/partners/2.png" alt="2.png">
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg">
                 <div class="our_partner">
-                    <img class="img-fluid" src="images/partners/3.png" alt="3.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/partners/3.png" alt="3.png">
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg">
                 <div class="our_partner">
-                    <img class="img-fluid" src="images/partners/4.png" alt="4.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/partners/4.png" alt="4.png">
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg">
                 <div class="our_partner">
-                    <img class="img-fluid" src="images/partners/5.png" alt="5.png">
+                    <img class="img-fluid" src="<?=Url::base()?>/images/partners/5.png" alt="5.png">
                 </div>
             </div>
         </div>

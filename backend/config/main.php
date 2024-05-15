@@ -11,10 +11,13 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+
     'modules' => [],
     'components' => [
+
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'baseUrl'=>'/admin',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -37,14 +40,15 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
+            'baseUrl'=>'/admin',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];

@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Category;
+use common\models\Courses;
 use common\models\LoginForm;
 use common\models\User;
 use frontend\models\ContactForm;
@@ -78,9 +79,11 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = Category::find()->all();
+        $mod = Courses::find()->all();
 
         return $this->render('index',[
             'model' => $model,
+            'mod' => $mod,
         ]);
     }
 
