@@ -38,6 +38,7 @@
                     ['label' => 'Category', 'url' => ['category/index'], ],
                     ['label' => 'Category_child', 'url' => ['category-child/index'], ],
                     ['label' => 'courses', 'url' => ['courses/index'], ],
+                    ['label' => 'teacher', 'url' => ['teacher/index'], ],
                     ['label' => 'Yii2 PROVIDED', 'header' => true],
                     ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],

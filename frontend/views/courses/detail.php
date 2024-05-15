@@ -1,5 +1,8 @@
 <?php
 /** @var yii\web\View $model */
+/** @var yii\web\View $teach */
+
+use yii\helpers\Url;
 ?>
 <section class="inner_page_breadcrumb csv2" >
     <div class="container">
@@ -10,7 +13,12 @@
                         <div class="cs_ins_container">
                             <div class="cs_instructor">
                                 <ul class="cs_instrct_list float-left mb0">
-                                    <li class="list-inline-item"><img class="thumb" src="/uploads/files/site/virtualdars.uz_user_default_image.png" alt="" style="border-radius: 100%">
+                                    <li class="list-inline-item"><img class="thumb" src=" <?php if(!empty($teach->img)){
+                                            echo Url::base().'/images/teacher/'.$teach->img;
+                                        }
+                                        else{
+                                            echo Url::base().'/images/teacher/user_default.jpg';
+                                        }?>" alt="" style="border-radius: 100%">
                                     </li>
                                     <li class="list-inline-item"><a class="color-white" href="#">
                                             <?=$model->teacher?>                                       </a></li>
@@ -20,7 +28,7 @@
 
                             </div>
                             <h3 class="cs_title color-white">
-                                Mysql Ma&#039;lumotlar bazasi bilan ishlash                            </h3>
+                                <?=$model->name?>                            </h3>
 
                             <ul class="cs_review_seller">
 
@@ -41,6 +49,9 @@
                             <ul class="cs_review_enroll">
                                 <li class="list-inline-item"><a class="color-white" href="#"><span
                                             class="flaticon-profile"></span> 246 O'quvchilar                                    </a></li>
+                                <li class="list-inline-item"><a class="color-white" href="#"><span
+                                                class="flaticon-comment"></span>
+                                        1                                            Fikrlar</a></li>
 
 
                             </ul>
@@ -92,45 +103,8 @@
                                          aria-labelledby="Overview-tab">
                                         <div class="cs_row_two csv2">
                                             <div class="cs_overview">
-                                                <h4 class="title">
-                                                    Mysql Ma&#039;lumotlar bazasi bilan ishlash            </h4>
+                                                <?=$model->description?>
 
-                                                <p>Ma'lumotlar bazasi bilan ishlash jarayoni. Judayam backend dasturchi uchun kerekli qism hisoblanadi. Malumotlar bazasi bilan ishlash Mysql to'liq tushuntirilgan</p>
-
-                                                <hr>
-
-                                                <h4>Bu kursda nimalarni o'rganasiz?</h4>
-                                                <ul class="cs_course_syslebus">
-                                                    <li>
-                                                        <i class="fa fa-check"></i>
-                                                        <p> Mysql bilan ishlay olish</p>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fa fa-check"></i>
-                                                        <p> Loyixa strukturasini qura olish</p>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fa fa-check"></i>
-                                                        <p> Darsliklar yangi qo&#039;shib boriladi. </p>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fa fa-check"></i>
-                                                        <p> Mentorlik xizmatini taqdim etilishi</p>
-                                                    </li>
-                                                </ul>
-
-                                                <hr>
-                                                <h4>Talablar</h4>
-                                                <ul class="list_requiremetn">
-                                                    <li>
-                                                        <i class="fa fa-circle"></i>
-                                                        <p>Kompyuterda ishlash asoslari</p>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fa fa-circle"></i>
-                                                        <p>Mysql ni o&#039;rganishga ishtiyoq</p>
-                                                    </li>
-                                                </ul>
 
                                             </div>
                                         </div>

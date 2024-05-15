@@ -1,25 +1,24 @@
 <?php
 
-use common\models\Courses;
+use common\models\Teacher;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
-
 /** @var yii\web\View $this */
-/** @var common\models\search\CoursesSearch $searchModel */
+/** @var common\models\search\TeacherSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Courses';
+$this->title = 'Teachers';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="courses-index">
+<div class="teacher-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Courses', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Teacher', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -31,17 +30,23 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'name',
-            'keywords:ntext',
-            'date',
-            'status',
-            //'category_child_id',
-            //'sum',
-            //'teacher',
-            //'description:ntext',
+            'fullname',
+            'email:email',
+            'password',
+            'category_id',
+            //'age',
+            //'date',
+            //'status',
+            //'jinsi',
+            //'malumoti',
+            //'manzili',
+            //'keywords:ntext',
+            //'fayl',
+            //'img',
+            //'courses_id',
             [
                 'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Courses $model, $key, $index, $column) {
+                'urlCreator' => function ($action, Teacher $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
             ],
