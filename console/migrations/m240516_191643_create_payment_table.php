@@ -3,21 +3,21 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%tulov}}`.
+ * Handles the creation of table `{{%payment}}`.
  */
-class m240322_060344_create_tulov_table extends Migration
+class m240516_191643_create_payment_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%tulov}}', [
+        $this->createTable('{{%payment}}', [
             'id' => $this->primaryKey(),
-            'user_id'=>$this->integer(),
+            'students_id'=>$this->integer(),
             'courses_id'=>$this->integer(),
             'sum'=>$this->float(),
-            'date'=>$this->date()
+            'date'=>$this->date(),
         ]);
     }
 
@@ -26,6 +26,6 @@ class m240322_060344_create_tulov_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%tulov}}');
+        $this->dropTable('{{%payment}}');
     }
 }
